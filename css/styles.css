@@ -319,7 +319,7 @@ nav .link {
 .our-team {
   display: flex;
   gap: 30px;
-  flex-basis: calc((100%-90) / 4);
+  flex-basis: calc((100% - 90) / 4);
 }
 .section {
   padding-top: 94px;
