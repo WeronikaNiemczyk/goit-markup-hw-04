@@ -92,7 +92,7 @@ ul {
   word-spacing: 0.03px;
   color: #000000;
   font-family: "Raleway";
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .navigation {
@@ -117,6 +117,7 @@ nav .link {
   font-style: normal;
   padding-top: 20px;
   padding-bottom: 60px;
+  display: flex;
 }
 .contact {
   font-size: 14px;
@@ -303,6 +304,7 @@ nav .link {
 }
 .footer-container {
   padding-top: 60px;
+  display: flex;
 }
 .our-team {
   display: flex;
@@ -335,15 +337,25 @@ nav .link {
   gap: 10px;
   justify-content: space-between;
 }
-.social.media.icon {
-  fill: var(--color2);
-}
+
 .social-media-icon:hover,
-.social-media-icon:focus {
-  --color2: #2196f3;
-  /* fill: var(--color2);
-  stroke: var(--color2); */
+.social-media-icon:focus .elipsa:hover {
+  --color4: var(--main-background-color);
+  fill: var(--color4);
 }
+.elipsa {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-background-color);
+}
+.elipsa:hover {
+  background-color: var(--main-link-color);
+}
+
 .clients {
   display: flex;
   gap: 30px;
@@ -358,7 +370,11 @@ nav .link {
   border-radius: 4px;
 }
 .clients-logo:hover {
-  /* background-color: var(--color2); */
+  --color3: var(--main-link-color);
+  fill: var(--color3);
+  --color2: var(--main-link-color);
+  fill: var(--color2);
+  border: 1px solid var(--main-link-color);
 }
 .join-us {
   font-size: 14px;
@@ -367,4 +383,33 @@ nav .link {
   text-align: left;
   text-transform: uppercase;
   color: var(--main-background-color);
+}
+.social-media-footer {
+  padding-top: 12px;
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-layout {
+  flex-direction: column;
+}
+.footer-icons {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  --color4: var(--main-background-color);
+  fill: var(--color4);
+}
+.footer-layout-icons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  gap: 10px;
+}
+.footer-icons:hover {
+  background-color: var(--main-link-color);
 }
