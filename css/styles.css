@@ -32,9 +32,13 @@ ul {
 }
 .button.port:hover {
   background-color: var(--main-link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button.port:focus {
   background-color: var(--main-link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button {
   font-size: 16px;
@@ -92,7 +96,7 @@ ul {
   word-spacing: 0.03px;
   color: #000000;
   font-family: "Raleway";
-  /* margin-right: 93px; */
+  margin-right: 93px;
 }
 
 .navigation {
@@ -231,7 +235,6 @@ nav .link {
   border-bottom: 1px solid #ececec;
 }
 .banner {
-  background-color: #2f303a;
   box-sizing: border-box;
   width: 100%;
   height: 600px;
@@ -239,6 +242,10 @@ nav .link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(../images/Background-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .blue {
   color: var(--main-link-color);
@@ -253,7 +260,10 @@ nav .link {
   border: 1px solid #eeeeee;
   max-width: 370px;
 }
-
+.figure-proffesion:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .menu {
   display: flex;
   gap: 40px;
@@ -351,15 +361,20 @@ nav .link {
   align-items: center;
   justify-content: center;
   background-color: var(--main-background-color);
+  cursor: pointer;
 }
-.elipsa:hover {
+.elipsa:hover,
+.elipsa:focus {
   background-color: var(--main-link-color);
+  --color4: var(--main-background-color);
+  fill: var(--color4);
 }
 
 .clients {
   display: flex;
   gap: 30px;
   flex-basis: calc(100% - 150) / 6;
+  cursor: pointer;
 }
 .clients-logo {
   padding-top: 17.71px;
@@ -369,7 +384,8 @@ nav .link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-logo:hover {
+.clients-logo:hover,
+.clients-logo:focus {
   --color3: var(--main-link-color);
   fill: var(--color3);
   --color2: var(--main-link-color);
@@ -403,6 +419,7 @@ nav .link {
   background-color: rgba(255, 255, 255, 0.1);
   --color4: var(--main-background-color);
   fill: var(--color4);
+  cursor: pointer;
 }
 .footer-layout-icons {
   display: flex;
@@ -410,6 +427,7 @@ nav .link {
   padding-top: 20px;
   gap: 10px;
 }
-.footer-icons:hover {
+.footer-icons:hover,
+.footer-icons:focus {
   background-color: var(--main-link-color);
 }
