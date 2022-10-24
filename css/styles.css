@@ -286,7 +286,7 @@ nav .link {
 }
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   max-width: 40%;
   justify-content: space-between;
   align-items: center;
