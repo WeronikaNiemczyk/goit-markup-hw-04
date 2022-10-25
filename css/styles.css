@@ -266,10 +266,11 @@ nav .link {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
     url(../images/Background-header.jpg);
 
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%;
   max-width: 1600px;
+  margin: auto;
 }
 .blue {
   color: var(--main-link-color);
